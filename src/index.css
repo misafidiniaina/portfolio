@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-clash {
   font-family: "Clash Display", sans-serif;
 }
@@ -20,4 +24,8 @@
   .section-wrapper {
     padding: 0rem 6.7rem;
   }
+}
+
+.sosy {
+  color: #ffffffb3;
 }

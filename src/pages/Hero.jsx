@@ -6,17 +6,18 @@ const Hero = () => {
     <section
       className="w-screen h-screen flex section-wrapper flex-col justify-center items-start mt-[30px]"
       role="banner"
+      id="home"
     >
       <div className=" w-full flex justify-between align-baseline">
         <div>
           <p className="text-base font-clash text-white/70 mb-4">Hello Guys</p>
-          <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-[4rem] font-clash text-white max-w-5xl font-light lg:leading-tight ">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-[4rem] font-clash text-white max-w-5xl font-light lg:leading-tight ">
             I’m <span className="font-clash">Liantsoa Tsiory</span>,
             <span className="font-clash"> Devops & Cloud engineer</span>, I
             specialize in scalable infrastructure and automation.
           </h1>
         </div>
-        <div className="right-50 flex flex-col items-center justify-end gap-1">
+        <div className="flex flex-col items-center justify-end gap-1 ml-[2rem]">
           <svg
             width="3"
             height="153"
