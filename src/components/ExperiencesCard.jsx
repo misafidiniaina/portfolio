@@ -1,17 +1,18 @@
 import React from "react";
 
-const ExperiencesCard = () => {
+const ExperiencesCard = ({ date, position, company, description }) => {
   return (
-    <div className="font-clash flex flex-col items-start justify-between">
-      <div className="text-white">Octobre 2024 - Now</div>
-      <div className="text-white">
-        <div>Devos Engineer</div>
-        <div>Hoag Target</div>
+    <div className="w-full md:w-[45%]  font-clash flex flex-col items-start justify-between gap-4">
+      <div className="text-[#ffffffcc] font-light text-[1.3rem]">{date}</div>
+      <div className="text-white flex flex-col">
+        <div className="font-regular text-[2rem] md:text-[2.2rem] leading-8">
+          {position}
+        </div>
+        <div className="font-light text-[1.2rem] text-[#ffffff80]">
+          {company}
+        </div>
       </div>
-      <p className="text-white">
-        Leading infrastructure automation and CI/CD implementation Managed
-        Kubernetes clusters and implemented monitoring solutions
-      </p>
+      <p className="text-[#ffffffcc]">{description}</p>
       <div></div>
     </div>
   );
