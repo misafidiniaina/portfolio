@@ -1,9 +1,10 @@
 import React from "react";
 import RotatingText from "./RotatingText/RotatingText";
+import Noise from "./Noise/Noise"
 
 const CallToAction = () => {
   return (
-    <div className="w-screen py-3 bg-[linear-gradient(to_right,_#AA1DAF,_#B51780,_#BB7411,_#00CC78)] mt-5">
+    <div className="w-screen py-3 bg-[linear-gradient(to_right,_#AA1DAF,_#B51780,_#BB7411,_#00CC78)] mt-10">
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between section-wrapper w-full">
         <RotatingText
           texts={[
@@ -17,8 +18,8 @@ const CallToAction = () => {
           staggerFrom={"last"}
           initial={{ y: "100%" }}
           animate={{ y: 0 }}
-          exit={{ y: "-102%" }}
-          staggerDuration={0.010}
+          exit={{ y: "-100%" }}
+          staggerDuration={0.01}
           splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
           transition={{ type: "spring", damping: 30, stiffness: 400 }}
           rotationInterval={2000}
@@ -26,6 +27,22 @@ const CallToAction = () => {
         <button className="flex justify-center items-center font-clash text-white font-regular border border-white px-4 py-2 rounded-[20px]">
           Contact me
         </button>
+        {/* <div
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <Noise
+            patternSize={250}
+            patternScaleX={1}
+            patternScaleY={1}
+            patternRefreshInterval={2}
+            patternAlpha={15}
+          />
+        </div> */}
       </div>
     </div>
   );

@@ -18,6 +18,7 @@ const Experiences = () => {
         position="System Administrator Intern"
         company="Hoag Target"
         description="Maintained Linux servers and implemented new server solution for the internal network usage"
+        left={false}
       />
     </section>
   );
