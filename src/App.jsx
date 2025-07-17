@@ -7,6 +7,7 @@ import ScrollIndicator from './components/ScrollIndicator'
 import CallToAction from './components/CallToAction'
 import Experiences from './pages/Experiences'
 import Projects from './pages/Projects'
+import PermanentButton from './components/PermanentButton'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Experiences />
       <Projects  />
       <ScrollIndicator />
+      <PermanentButton />
       <div className="h-10"></div>
     </>
   )
