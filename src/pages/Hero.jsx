@@ -11,7 +11,7 @@ const Hero = () => {
       <div className=" w-full flex justify-between align-baseline">
         <div>
           <p className="text-base font-clash text-white/70 mb-4">Hello Guys</p>
-          <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-[4rem] font-clash text-white max-w-5xl font-light lg:leading-tight ">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-[4rem] font-clash text-[white] max-w-5xl font-light lg:leading-tight ">
             I’m <span className="font-clash">Liantsoa Tsiory</span>,
             <span className="font-clash"> Devops & Cloud engineer</span>, I
             specialize in scalable infrastructure and automation.

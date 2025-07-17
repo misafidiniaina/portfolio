@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="relative flex justify-end w-full items-baseline flex-col font-clash p-[24px] border border-[rgba(255,255,255,0.2)] mb-[2rem]">
+    <div className="relative flex justify-end w-full items-baseline flex-col font-clash  mb-[0.3rem]">
      <Icon
         icon={icon}
         width="4rem"

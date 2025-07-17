@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <Experiences />
       <Projects  />
       <ScrollIndicator />

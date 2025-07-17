@@ -9,9 +9,13 @@ import google from "../assets/google.png";
 const Projects = () => {
   return (
     <section
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full section-wrapper"
+      className="flex flex-col w-full section-wrapper"
       id="projects"
     >
+      <p className="font-clash font-black text-[white] text-4xl md:text-5xl w-full text-end mb-3">
+        PROJECTS
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-10">
       <ProjectCard
         projectTitle="Multi Cloud infrastructure"
         image={
@@ -23,7 +27,7 @@ const Projects = () => {
         }
         skills={["file-icons:terraform", "fontisto:aws"]}
         customIcons={[
-          <img src={google} alt="gcp icon" className="h-6 md:h-7" />,
+          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
         ]}
         url="https://github.com/misafidiniaina/multi-cloud"
       />
@@ -38,7 +42,7 @@ const Projects = () => {
         }
         skills={["fontisto:aws", "file-icons:kubernetes"]}
         customIcons={[
-          <img src={google} alt="gcp icon" className="h-6 md:h-7" />,
+          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
         ]}
         url="https://github.com/misafidiniaina/multi-cluster"
       />
@@ -53,7 +57,7 @@ const Projects = () => {
         }
         skills={["file-icons:terraform"]}
         customIcons={[
-          <img src={google} alt="gcp icon" className="h-6 md:h-7" />,
+          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
         ]}
         url="https://github.com/misafidiniaina/gcp_iac"
       />
@@ -69,6 +73,7 @@ const Projects = () => {
         skills={["akar-icons:python-fill", "uil:linux"]}
         url="https://github.com/misafidiniaina/firewall"
       />
+      </div>
     </section>
   );
 };

@@ -34,7 +34,7 @@ const ExperiencesCard = ({
       <p className="text-[#ffffffcc]">{description}</p>
 
       {/* Skills Icons */}
-      <div className="flex items-center gap-3 flex-wrap mt-2">
+      <div className="flex items-center gap-4 md:gap-5 flex-wrap mt-2">
 
          {/* Custom icons (e.g., <img />, <svg />) */}
         {customIcons.map((iconElement, index) => (
