@@ -14,11 +14,12 @@ const ExperiencesCard = ({
 }) => {
   return (
     <div
-      className={`w-full md:w-[45%] font-clash flex flex-col ${
+      className={`w-full md:w-[45%] font-clash flex flex-col bg-black ${
         left
           ? "items-start text-left mb-20"
-          : "items-start sm:item-start md:items-end text-left md:text-right mt-10 md:mt-20"
-      } justify-between gap-4`}
+          : "items-start sm:item-start md:items-end text-left md:text-right mt-0 md:mt-20"
+      } justify-between gap-3`}
+
     >
       <div className="text-[#ffffffcc] font-light text-[1rem] md:text-[1.3rem]">
         {date}
@@ -31,7 +32,7 @@ const ExperiencesCard = ({
           {company}
         </div>
       </div>
-      <p className="text-[#ffffffcc]">{description}</p>
+      <p className="text-[#868686]">{description}</p>
 
       {/* Skills Icons */}
       <div className="flex items-center gap-4 md:gap-5 flex-wrap mt-2">

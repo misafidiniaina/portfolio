@@ -16,7 +16,7 @@ const ProjectCard = ({
 
   return (
     <div
-      className="font-clash flex flex-col gap-5 justify-start items-start w-full  mt-7 cursor-pointer hover:border-white transition-colors"
+      className="bg-black font-clash flex flex-col gap-5 justify-start items-start w-full  mt-7 cursor-pointer hover:border-white transition-colors"
       onClick={handleClick}
     >
       {image}

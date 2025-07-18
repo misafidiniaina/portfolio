@@ -5,10 +5,10 @@ import google from "../assets/google.png";
 const Experiences = () => {
   return (
     <section
-      className="section-wrapper my-28 flex flex-col gap-10"
+      className="section-wrapper my-28 flex flex-col gap-2"
       id="experience"
     >
-      <p className="font-clash font-black text-white text-4xl md:text-5xl w-full mb-3">
+      <p className="font-clash font-black text-4xl md:text-5xl w-full mb-3 text-stroke-2">
         EXPERIENCES
       </p>
       <div className="flex flex-col md:flex-row justify-between">

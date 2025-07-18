@@ -12,7 +12,7 @@ const Projects = () => {
       className="flex flex-col w-full section-wrapper"
       id="projects"
     >
-      <p className="font-clash font-black text-[white] text-4xl md:text-5xl w-full text-end mb-3">
+      <p className="font-clash font-black text-4xl md:text-5xl w-full text-end mb-3 text-stroke-2">
         PROJECTS
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-10">
