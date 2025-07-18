@@ -16,7 +16,7 @@ const Services = () => {
           title="Automation & Deployment"
           description={[
             "I streamline how software is built and delivered.",
-            "I create automated systems that take developers' work and safely turn it into working applications — quickly, reliably, and with minimal manual effort. Think of it as building a fast, efficient software assembly line.",
+            "I automate the process of turning code into applications, making delivery fast and reliable.",
           ]}
         />
         <ServiceCard
@@ -24,7 +24,7 @@ const Services = () => {
           title=" Infrastructure & Cloud Management"
           description={[
             "I set up and maintain the environment where software lives.",
-            "I manage cloud servers and tools to ensure applications run smoothly, securely, and can handle growth. Whether it’s setting up new systems or maintaining existing ones, I make sure the kitchen is always ready.",
+            "I manage cloud servers to keep applications running smoothly, securely, and ready to grow",
           ]}
         />
         <ServiceCard
@@ -32,7 +32,7 @@ const Services = () => {
           title="Monitoring & Reliability"
           description={[
             "I keep watch to catch and fix problems before they affect users.",
-            "I monitor performance, detect issues early, and ensure systems stay online. My job is to prevent downtime, improve stability, and quickly respond to anything that goes wrong.",
+            "I monitor systems to prevent downtime, improve stability, and fix issues quickly.",
           ]}
         />
       </div>

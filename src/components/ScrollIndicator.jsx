@@ -33,7 +33,8 @@ const ScrollIndicator = () => {
         style={{
           height: "100%",
           width: `${scrollPosition}%`,
-          backgroundImage: 'linear-gradient(to right, #AA1DAF, #B51780, #BB7411, #00CC78)',
+          backgroundImage:
+            "linear-gradient(to right, #B0FF92, #B0FF92, #B0FF92, #B0FF92)",
           transition: "width 0.2s ease-out",
         }}
       />

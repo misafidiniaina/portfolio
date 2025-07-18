@@ -24,8 +24,8 @@ const ExperiencesCard = ({
       <div className="text-[#ffffffcc] font-light text-[1rem] md:text-[1.3rem]">
         {date}
       </div>
-      <div className="text-white flex flex-col">
-        <div className="font-regular text-[1.7rem] md:text-[2rem] leading-8">
+      <div className="text-[white] flex flex-col">
+        <div className="font-regular text-[1.7rem] md:text-[2rem] font-medium text-[white] leading-8">
           {position}
         </div>
         <div className="font-light text-[1.2rem] text-[#ffffff80]">
@@ -52,7 +52,7 @@ const ExperiencesCard = ({
           <Icon
             key={`iconify-${index}`}
             icon={iconName}
-            color="white"
+            color="whitesmoke"
             className="text-white text-2xl md:text-3xl"
           />
         ))}

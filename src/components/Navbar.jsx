@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HiOutlineMenu, HiOutlineX } from "react-icons/hi"; // For hamburger icons
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const sections = [
   "home",
@@ -29,7 +29,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial check
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -48,12 +48,12 @@ const Navbar = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_681_165)">
+          <g clipPath="url(#clip0_681_165)">
             <rect width="50" height="45.1368" fill="white" />
             <path
               d="M19.9062 11.5503H43.6164"
               stroke="black"
-              stroke-width="7"
+              strokeWidth="7"
             />
             <rect
               x="39"
@@ -66,9 +66,9 @@ const Navbar = () => {
             <path
               d="M32.0664 45.1376V11.4736"
               stroke="black"
-              stroke-width="7"
+              strokeWidth="7"
             />
-            <path d="M13 0V36H26" stroke="black" stroke-width="7" />
+            <path d="M13 0V36H26" stroke="black" strokeWidth="7" />
           </g>
           <defs>
             <clipPath id="clip0_681_165">
@@ -80,24 +80,17 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-base font-medium">
           {sections.map((section) => (
-            <li key={section} className="relative group">
+            <li key={section}>
               <a
                 href={`#${section}`}
                 className={`font-clash text-lg font-normal transition-colors duration-300 ${
                   activeSection === section
-                    ? "text-[#ffffffa0]"
-                    : "text-[#ffffffa0] hover:text-[#00A42C]"
+                    ? "text-[#B0FF92]"
+                    : "text-[#ffffffa0] hover:text-[#B0FF92]"
                 }`}
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
-              <span
-                className={`absolute left-0 -bottom-1 h-[2px] w-full bg-[linear-gradient(to_right,_#AA1DAF,_#B51780,_#BB7411,_#00CC78)] transform transition-all duration-300 origin-left ${
-                  activeSection === section
-                    ? "scale-x-100 opacity-100"
-                    : "scale-x-0 opacity-0"
-                }`}
-              ></span>
             </li>
           ))}
         </ul>
@@ -120,20 +113,11 @@ const Navbar = () => {
                 href={`#${section}`}
                 className={`block font-clash text-lg font-normal transition-colors duration-300 ${
                   activeSection === section
-                    ? "text-white"
-                    : "text-white hover:text-blue-500"
+                    ? "text-[#B0FF92]"
+                    : "text-white hover:text-[#B0FF92]"
                 }`}
               >
-                <div className="relative w-fit">
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                  <span
-                    className={`absolute left-0 -bottom-1 h-[2px] w-full bg-[linear-gradient(to_right,_#00A42C,_#00A42C,_#00A42C,_#00CC78)] transform transition-all duration-300 origin-left ${
-                      activeSection === section
-                        ? "scale-x-100 opacity-100"
-                        : "scale-x-0 opacity-0"
-                    }`}
-                  ></span>
-                </div>
+                {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             </li>
           ))}
