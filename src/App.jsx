@@ -11,6 +11,7 @@ import PermanentButton from "./components/PermanentButton";
 import Background from "./components/Background";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Experiences />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

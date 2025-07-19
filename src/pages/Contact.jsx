@@ -52,7 +52,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="Your full name"
-            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#a1a1a1] focus:outline-none focus:ring-1 focus:ring-[#B0FF92]"
+            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#a1a1a1] focus:outline-none focus:ring-1 focus:ring-[#B0FF92] text-[white]"
           />
         </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
             onChange={handleChange}
             required
             placeholder="your.email@example.com"
-            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#8d8d8d] focus:outline-none focus:ring-1 focus:ring-[#B0FF92]"
+            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#8d8d8d] focus:outline-none focus:ring-1 focus:ring-[#B0FF92] text-white"
           />
         </div>
 
@@ -90,7 +90,7 @@ const Contact = () => {
             required
             rows={5}
             placeholder="Write your message here..."
-            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#a1a1a1] focus:outline-none focus:ring-1 focus:ring-[#B0FF92] resize-none"
+            className="w-full px-4 py-2 rounded-sm bg-[black] border border-[#a1a1a1] focus:outline-none focus:ring-1 focus:ring-[#B0FF92] resize-none text-white"
           />
         </div>
 
