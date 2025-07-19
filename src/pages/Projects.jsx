@@ -8,71 +8,68 @@ import google from "../assets/google.png";
 
 const Projects = () => {
   return (
-    <section
-      className="flex flex-col w-full section-wrapper"
-      id="projects"
-    >
+    <section className="flex flex-col w-full section-wrapper" id="projects">
       <p className="font-clash font-black text-4xl md:text-5xl w-full text-end mb-3 text-stroke-2">
         PROJECTS
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-10">
-      <ProjectCard
-        projectTitle="Multi Cloud infrastructure"
-        image={
-          <img
-            src={img_multi_cloud}
-            alt="Multi cloud project"
-            className="rounded-lg w-[22rem]"
-          />
-        }
-        skills={["file-icons:terraform", "fontisto:aws"]}
-        customIcons={[
-          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
-        ]}
-        url="https://github.com/misafidiniaina/multi-cloud"
-      />
-      <ProjectCard
-        projectTitle="Kubernetes multi cluster"
-        image={
-          <img
-            src={img_multi_cluster}
-            alt="Kubernetes multi cluster"
-            className="rounded-lg w-[22rem]"
-          />
-        }
-        skills={["fontisto:aws", "file-icons:kubernetes"]}
-        customIcons={[
-          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
-        ]}
-        url="https://github.com/misafidiniaina/multi-cluster"
-      />
-      <ProjectCard
-        projectTitle="GCP infrastructure with terraform"
-        image={
-          <img
-            src={img_GCP_infra}
-            alt="Multi cloud project"
-            className="w-[22rem]"
-          />
-        }
-        skills={["file-icons:terraform"]}
-        customIcons={[
-          <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
-        ]}
-        url="https://github.com/misafidiniaina/gcp_iac"
-      />
-      <ProjectCard
-        projectTitle="Graphical interface Linux firewall"
-        image={
-          <img
-            src={img_firewall}
-            alt="Multi cloud project"
-            className="w-[22rem]"
-          />
-        }
-        skills={["akar-icons:python-fill", "uil:linux"]}
-        url="https://github.com/misafidiniaina/firewall"
-      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-5">
+        <ProjectCard
+          projectTitle="Kubernetes multi cluster"
+          image={
+            <img
+              src={img_multi_cluster}
+              alt="Kubernetes multi cluster"
+              className="rounded-lg w-[22rem]"
+            />
+          }
+          skills={["fontisto:aws", "file-icons:kubernetes"]}
+          customIcons={[
+            <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
+          ]}
+          url="https://github.com/misafidiniaina/multi-cluster"
+        />
+        <ProjectCard
+          projectTitle="Multi Cloud infrastructure"
+          image={
+            <img
+              src={img_multi_cloud}
+              alt="Multi cloud project"
+              className="rounded-lg w-[22rem]"
+            />
+          }
+          skills={["file-icons:terraform", "fontisto:aws"]}
+          customIcons={[
+            <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
+          ]}
+          url="https://github.com/misafidiniaina/multi-cloud"
+        />
+        <ProjectCard
+          projectTitle="GCP infrastructure with terraform"
+          image={
+            <img
+              src={img_GCP_infra}
+              alt="Multi cloud project"
+              className="w-[22rem]"
+            />
+          }
+          skills={["file-icons:terraform"]}
+          customIcons={[
+            <img src={google} alt="gcp icon" className="h-5 md:h-6" />,
+          ]}
+          url="https://github.com/misafidiniaina/gcp_iac"
+        />
+        <ProjectCard
+          projectTitle="Graphical interface Linux firewall"
+          image={
+            <img
+              src={img_firewall}
+              alt="Multi cloud project"
+              className="w-[22rem]"
+            />
+          }
+          skills={["akar-icons:python-fill", "uil:linux"]}
+          url="https://github.com/misafidiniaina/firewall"
+        />
       </div>
     </section>
   );

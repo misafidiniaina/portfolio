@@ -9,6 +9,7 @@ import Experiences from "./pages/Experiences";
 import Projects from "./pages/Projects";
 import PermanentButton from "./components/PermanentButton";
 import Background from "./components/Background";
+import Skills from "./pages/Skills";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Background count={5} />
       <Hero />
       <Services />
-      {/* <CallToAction /> */}
+      <Skills />
       <Experiences />
       <Projects />
       <ScrollIndicator />

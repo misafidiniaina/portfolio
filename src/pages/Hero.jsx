@@ -19,7 +19,7 @@ const Hero = () => {
             ,<span className="font-clash"> Devops & Cloud engineer</span>, I
             specialize in scalable infrastructure and automation
             <span
-              className="inline-block w-5 aspect-square rounded-md bg-[#8bff5d] ml-2 align-baseline"
+              className="inline-block w-4 md:w-5 aspect-square rounded-sm bg-[#B0FF92] ml-2 align-baseline"
               aria-hidden="true"
             ></span>
           </h1>
