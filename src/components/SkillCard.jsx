@@ -4,7 +4,7 @@ import Noise from "./Noise/Noise";
 const SkillCard = ({ image, name, category }) => {
   return (
     <div className="flex flex-col gap-3 font-clash text-[#8bff5d] justify-center w-[130px] h-full filter grayscale hover:grayscale-0 transition-all duration-10">
-      <div className="bg-black flex justify-center items-center relative overflow-hidden w-[75px] aspect-square">
+      <div className="bg-[#020202] flex justify-center items-center relative overflow-hidden w-[75px] aspect-square">
         <img
           src={image}
           alt={name}

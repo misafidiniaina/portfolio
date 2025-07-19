@@ -10,20 +10,20 @@ import Projects from "./pages/Projects";
 import PermanentButton from "./components/PermanentButton";
 import Background from "./components/Background";
 import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
       <Navbar />
+      <PermanentButton />
       <Background count={5} />
       <Hero />
       <Services />
       <Skills />
       <Experiences />
       <Projects />
-      {/* <ScrollIndicator /> */}
-      <PermanentButton />
-      <div className="h-10"></div>
+      <Contact />
     </>
   );
 }
