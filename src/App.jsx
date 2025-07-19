@@ -21,7 +21,7 @@ function App() {
       <Skills />
       <Experiences />
       <Projects />
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
       <PermanentButton />
       <div className="h-10"></div>
     </>

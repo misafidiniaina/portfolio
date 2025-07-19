@@ -1,16 +1,14 @@
 import React from "react";
 import Noise from "./Noise/Noise";
-import { Icon } from "@iconify/react";
 
-const SkillCard = () => {
+const SkillCard = ({ image, name, category }) => {
   return (
-    <div className="flex flex-col gap-3 font-clash text-[#bdbdbd] justify-center  w-[130px] h-full">
-      <div className="bg-black flex justify-center items-center relative overflow-hidden w-[90px] aspect-square">
-        <Icon
-          icon="fluent-mdl2:jenkins-logo"
-          width="40"
-          height="40"
-          color="[#bdbdbd]"
+    <div className="flex flex-col gap-3 font-clash text-[#8bff5d] justify-center w-[130px] h-full filter grayscale hover:grayscale-0 transition-all duration-10">
+      <div className="bg-black flex justify-center items-center relative overflow-hidden w-[75px] aspect-square">
+        <img
+          src={image}
+          alt={name}
+          className="w-[40px] h-[40px] object-contain"
         />
         <Noise
           patternSize={250}
@@ -21,8 +19,8 @@ const SkillCard = () => {
         />
       </div>
       <div className="flex flex-col gap-[0px]">
-        <p className="font-medium text-[1.5rem]">Jenkins</p>
-        <p className="font-light text-[#7e7e7e]">ci/cd pipeline</p>
+        <p className="font-medium text-[1.2rem]">{name}</p>
+        <p className="font-light text-[#7e7e7e]">{category}</p>
       </div>
     </div>
   );
