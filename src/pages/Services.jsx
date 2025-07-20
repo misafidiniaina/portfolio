@@ -21,7 +21,7 @@ const Services = () => {
         />
         <ServiceCard
           icon="hugeicons:configuration-02"
-          title=" Infrastructure & Cloud Management"
+          title="Infrastructure & Cloud Management"
           description={[
             "I set up and maintain the environment where software lives.",
             "I manage cloud servers to keep applications running smoothly, securely, and ready to grow",

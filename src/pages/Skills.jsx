@@ -12,16 +12,16 @@ import Python from "../assets/stacks/Python.svg";
 import Terraform from "../assets/stacks/Terraform.svg";
 
 const skills = [
-  { image: Jenkins, name: "Jenkins", category: "ci/cd pipeline" },
-  { image: Ansible, name: "Ansible", category: "automation" },
-  { image: AWS, name: "AWS", category: "cloud" },
-  { image: Docker, name: "Docker", category: "containers" },
-  { image: Google, name: "Google Cloud", category: "cloud" },
-  { image: Grafana, name: "Grafana", category: "monitoring" },
-  { image: Kubernetes, name: "Kubernetes", category: "orchestration" },
-  { image: Prometheus, name: "Prometheus", category: "metrics" },
-  { image: Python, name: "Python", category: "language" },
   { image: Terraform, name: "Terraform", category: "infrastructure as code" },
+  { image: Ansible, name: "Ansible", category: "infrastructure as code" },
+  { image: Jenkins, name: "Jenkins", category: "ci/cd pipeline" },
+  { image: AWS, name: "AWS", category: "cloud" },
+  { image: Google, name: "Google Cloud", category: "cloud" },
+  { image: Docker, name: "Docker", category: "containerization" },
+  { image: Kubernetes, name: "Kubernetes", category: "orchestration" },
+  { image: Grafana, name: "Grafana", category: "monitoring" },
+  { image: Prometheus, name: "Prometheus", category: "monitoring" },
+  { image: Python, name: "Python", category: "scripting" },
 ];
 
 const Skills = () => {
@@ -66,7 +66,10 @@ const Skills = () => {
         STACK
       </p>
 
-      <div className="relative w-full" style={{ height: `${containerHeight}px` }}>
+      <div
+        className="relative w-full"
+        style={{ height: `${containerHeight}px` }}
+      >
         {skills.map((skill, index) => {
           const posIndex = index % positions.length;
           const left = positions[posIndex];

@@ -3,8 +3,8 @@ import "./tailwind.css";
 import Hero from "./pages/Hero";
 import Navbar from "./components/Navbar";
 import Services from "./pages/Services";
-import ScrollIndicator from "./components/ScrollIndicator";
-import CallToAction from "./components/CallToAction";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Experiences from "./pages/Experiences";
 import Projects from "./pages/Projects";
 import PermanentButton from "./components/PermanentButton";
@@ -16,6 +16,18 @@ import Footer from "./pages/Footer";
 function App() {
   return (
     <>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Navbar />
       <PermanentButton />
       <Background count={5} />

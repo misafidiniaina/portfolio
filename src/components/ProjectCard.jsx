@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import GradientText from "./GradientText/GradientText";
 
 const ProjectCard = ({
   projectTitle,
@@ -16,13 +17,18 @@ const ProjectCard = ({
 
   return (
     <div
-      className="bg-black font-clash flex flex-col gap-5 justify-start items-start w-full cursor-pointer hover:border-[#8bff5d] transition-colors p-5 border border-[rgba(255,255,255,0.1)]"
+      className="bg-black font-clash flex flex-col gap-5 justify-start items-start w-full cursor-pointer hover:border-[#8bff5d] transition-colors p-5 border border-[#ffffff33]"
       onClick={handleClick}
     >
       {image}
-      <h4 className="font-medium text-[1.3rem] text-[#c2c2c2] leading-6">
-        {projectTitle}
-      </h4>
+      <GradientText
+        colors={["#616161", "#c2c2c2", "#c2c2c2", "#c2c2c2", "#c2c2c2"]}
+        animationSpeed={3}
+        showBorder={false}
+        className="mx-0"
+      >
+        <h4 className="font-medium text-[1.3rem] leading-6">{projectTitle}</h4>
+      </GradientText>
 
       <div className="flex relative items-center gap-3 w-full mt-2">
         {customIcons.map((iconElement, index) => (

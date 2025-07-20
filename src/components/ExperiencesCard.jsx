@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
+import GradientText from "./GradientText/GradientText";
 
 const ExperiencesCard = ({
   date,
@@ -19,7 +20,11 @@ const ExperiencesCard = ({
           : "items-start sm:item-start md:items-end text-left md:text-right mt-0 md:mt-20"
       } justify-between gap-3`}
     >
-      <div className={`flex items-center gap-2 md:gap-3 ${left ?"flex-row": "flex-row md:flex-row-reverse"}`}>
+      <div
+        className={`flex items-center gap-2 md:gap-3 ${
+          left ? "flex-row" : "flex-row md:flex-row-reverse"
+        }`}
+      >
         <div className="w-3 md:w-4 aspect-square rounded-sm bg-[#B0FF92]"></div>
         <div className="text-[#ffffffcc] font-light text-[1rem] md:text-[1.3rem]">
           {date}

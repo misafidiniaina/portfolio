@@ -1,5 +1,6 @@
 import React from "react";
 import Noise from "./Noise/Noise";
+import GradientText from "./GradientText/GradientText";
 
 const SkillCard = ({ image, name, category }) => {
   return (
@@ -19,7 +20,7 @@ const SkillCard = ({ image, name, category }) => {
         />
       </div>
       <div className="flex flex-col gap-[0px]">
-        <p className="font-medium text-[1.2rem]">{name}</p>
+        <p className="font-semibold text-[1.2rem]">{name}</p>
         <p className="font-light text-[#7e7e7e]">{category}</p>
       </div>
     </div>
