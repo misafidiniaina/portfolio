@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="flex section-wrapper gap-5 w-screen flex-col"
+      className="w-full flex section-wrapper gap-5 flex-col"
     >
       <p className="font-clash font-bold text-4xl md:text-5xl w-full text-end text-stroke-2">
         SERVICES

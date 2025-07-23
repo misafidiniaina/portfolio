@@ -19,7 +19,7 @@ const Projects = () => {
             <img
               src={img_multi_cluster}
               alt="Kubernetes multi cluster"
-              className="rounded-lg w-[22rem]"
+              className="w-full object-cover"
             />
           }
           skills={["fontisto:aws", "file-icons:kubernetes"]}
@@ -34,7 +34,7 @@ const Projects = () => {
             <img
               src={img_multi_cloud}
               alt="Multi cloud project"
-              className="rounded-lg w-[22rem]"
+              className="w-full object-cover"
             />
           }
           skills={["file-icons:terraform", "fontisto:aws"]}
@@ -49,7 +49,7 @@ const Projects = () => {
             <img
               src={img_GCP_infra}
               alt="Multi cloud project"
-              className="w-[22rem]"
+              className="w-full object-cover"
             />
           }
           skills={["file-icons:terraform"]}
@@ -64,7 +64,7 @@ const Projects = () => {
             <img
               src={img_firewall}
               alt="Multi cloud project"
-              className="w-[22rem]"
+              className="w-full object-cover"
             />
           }
           skills={["akar-icons:python-fill", "uil:linux"]}

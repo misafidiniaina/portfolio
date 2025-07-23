@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 const Hero = () => {
   return (
     <section
-      className="w-screen h-screen flex section-wrapper flex-col justify-center items-start mt-[30px]"
+      className="w-full h-screen flex section-wrapper flex-col justify-center items-start mt-[30px]"
       role="banner"
       id="home"
     >

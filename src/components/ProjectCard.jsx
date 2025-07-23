@@ -27,7 +27,9 @@ const ProjectCard = ({
         showBorder={false}
         className="mx-0"
       >
-        <h4 className="font-medium text-[1.3rem] leading-6">{projectTitle}</h4>
+        <h4 className="font-medium text-left text-[1.3rem] leading-6">
+          {projectTitle}
+        </h4>
       </GradientText>
 
       <div className="flex relative items-center gap-3 w-full mt-2">
